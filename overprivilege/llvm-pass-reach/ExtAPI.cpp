@@ -5,7 +5,6 @@
 
 /*
  * Extracted from SVF: https://github.com/SVF-tools/SVF/
- * Modified by Ke Hong
 */
 
 #include "ExtAPI.h"
