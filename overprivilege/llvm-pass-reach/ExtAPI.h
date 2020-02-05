@@ -28,7 +28,6 @@
 
 /*
  * Extracted from SVF: https://github.com/SVF-tools/SVF/
- * Modified by Ke Hong
 */
 
 #ifndef __ExtAPI_H
