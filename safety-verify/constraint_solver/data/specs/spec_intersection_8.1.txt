@@ -1,0 +1,22 @@
+and(
+    <(
+        vehicle_ego.end_s,
+        intersection.start_s
+    ),
+    <(
+        vehicle_ego.arrive_time,
+        0
+    ),
+    is_color(
+        traffic_light_self,
+        unknown
+    ),
+    is_color(
+        traffic_light_main,
+        red
+    ),
+    is_direction(
+        vehicle_ego.lane,
+        right
+    )
+)

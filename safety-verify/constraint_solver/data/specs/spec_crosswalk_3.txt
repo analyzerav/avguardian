@@ -1,0 +1,14 @@
+and(
+    cross(
+        vehicle_ego.trajectory,
+        crosswalk_0.boundary
+    ),
+    cross(
+        pedestrian_0.boundary,
+        road_boundary
+    ),
+    cross(
+        pedestrian_0.boundary,
+        crosswalk_0.boundary
+    )
+)

@@ -1,0 +1,13 @@
+and(
+    >=(
+        vehicle_ego.end_s,
+        -(
+            intersection.start_s,
+            100
+        )
+    ),
+    <=(
+        vehicle_ego.start_s
+        intersection.start_s
+    )
+)

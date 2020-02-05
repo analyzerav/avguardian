@@ -1,0 +1,14 @@
+and(
+    <(
+        vehicle_ego.end_s,
+        intersection.start_s
+    ),
+    cross(
+        vehicle_ego.trajectory,
+        vehicle_0.boundary
+    ),
+    ==(
+        vehicle_0.velocity,
+        0
+    )
+)

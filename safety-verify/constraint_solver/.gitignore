@@ -1,0 +1,12 @@
+# python tmp files
+__pycache__
+*.pyc
+
+# custom tmp files
+*.tmp
+*.log
+
+# venv
+/python3.6
+
+data/cases

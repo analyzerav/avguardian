@@ -1,0 +1,439 @@
+(let ((a!1 (not (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!2 (not (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!3 (not (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!4 (not (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!5 (not (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!6 (not (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!7 (not (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!8 (not (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!9 (not (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!10 (not (and (not (= type_13 2))
+                      (not (= type_13 3))
+                      (= type_13 1)
+                      IsPointIn_19
+                      (not (>= min_24 stop_loose_l_distance_28))
+                      (<= min_24 stop_strict_l_distance_29)
+                      IsOnRoad_25
+                      (not (<= s_30 start_s_14))
+                      (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                      (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!11 (not (and (not (= type_13 2))
+                      (= type_13 3)
+                      IsPointIn_19
+                      (not (>= min_24 stop_loose_l_distance_28))
+                      (<= min_24 stop_strict_l_distance_29)
+                      IsOnRoad_25
+                      (not (<= s_30 start_s_14))
+                      (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                      (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!12 (not (and (= type_13 2)
+                      IsPointIn_19
+                      (not (>= min_24 stop_loose_l_distance_28))
+                      (<= min_24 stop_strict_l_distance_29)
+                      IsOnRoad_25
+                      (not (<= s_30 start_s_14))
+                      (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                      (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!13 (not (and (not (= type_13 2))
+                      (not (= type_13 3))
+                      (not (= type_13 1))
+                      (= type_13 0)
+                      IsPointIn_19
+                      (>= min_24 stop_loose_l_distance_28)
+                      IsEmpty_26
+                      (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                      (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!14 (not (and (not (= type_13 2))
+                      (not (= type_13 3))
+                      (= type_13 1)
+                      IsPointIn_19
+                      (>= min_24 stop_loose_l_distance_28)
+                      IsEmpty_26
+                      (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                      (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!15 (not (and (not (= type_13 2))
+                      (= type_13 3)
+                      IsPointIn_19
+                      (>= min_24 stop_loose_l_distance_28)
+                      IsEmpty_26
+                      (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                      (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!16 (not (and (= type_13 2)
+                      IsPointIn_19
+                      (>= min_24 stop_loose_l_distance_28)
+                      IsEmpty_26
+                      (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                      (not (<= min_24 stop_strict_l_distance_32)))))
+      (a!17 (or (and (= type_13 2)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (not (>= stop_deceleration.addr_12
+                              max_stop_deceleration_31)))
+                (and (= type_13 2)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (>= min_24 stop_loose_l_distance_28)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     IsOnRoad_25
+                     (not (<= s_30 start_s_14))
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (<= min_24 stop_strict_l_distance_29)
+                     (not IsOnRoad_25)
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (= type_13 2)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (= type_13 3)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (= type_13 1)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32))
+                (and (not (= type_13 2))
+                     (not (= type_13 3))
+                     (not (= type_13 1))
+                     (= type_13 0)
+                     IsPointIn_19
+                     (not (>= min_24 stop_loose_l_distance_28))
+                     (not (<= min_24 stop_strict_l_distance_29))
+                     IsEmpty_26
+                     (>= stop_deceleration.addr_12 max_stop_deceleration_31)
+                     (<= min_24 stop_strict_l_distance_32)))))
+  (and (<= (+ end_s_15 (* (- 1.0) end_s_17)) min_pass_s_distance_19)
+       a!1
+       a!2
+       a!3
+       a!4
+       a!5
+       a!6
+       a!7
+       a!8
+       a!9
+       a!10
+       a!11
+       a!12
+       a!13
+       a!14
+       a!15
+       a!16
+       a!17
+       FindCrosswalks_3))

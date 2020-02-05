@@ -1,0 +1,20 @@
+and(
+    >(
+        -(
+            vehicle_0.start_s,
+            intersection.end_s
+        ),
+        0
+    ),
+    <(
+        -(
+            vehicle_0.start_s,
+            intersection.end_s
+        ),
+        vehicle_ego.size.s
+    ),
+    st_cross(
+        vehicle_ego,
+        vehicle_0
+    )
+)

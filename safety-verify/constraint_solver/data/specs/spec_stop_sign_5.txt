@@ -1,0 +1,28 @@
+and(
+    ==(
+        vehicle_ego.arrive_time,
+        vehicle_0.arrive_time
+    ),
+    cross(
+        vehicle_ego.boundary,
+        intersection.boundary
+    ),
+    cross(
+        vehicle_0.boundary,
+        intersection.boundary
+    ),
+    is_direction(
+        vehicle_ego.lane,
+        left
+    ),
+    or(
+        is_direction(
+            vehicle_0.lane,
+            right
+        ),
+        is_direction(
+            vehicle_0.lane,
+            straight
+        ),
+    )
+)

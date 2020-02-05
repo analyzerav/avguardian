@@ -1,0 +1,10 @@
+and(
+    <(
+        vehicle_ego.end_s,
+        intersection.start_s
+    ),
+    is_color(
+        traffic_light_self,
+        red
+    )
+)

@@ -1,0 +1,13 @@
+(let ((a!1 (not (>= (+ start_s60_33 (* (- 1.0) end_s_19)) 0.0)))
+      (a!2 (and (not (<= end_s_21 start_s_20))
+                (not _ZSteqIcEN9__gnu_cxx11__enable_ifIXsr9__is_charIT_EE7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS2_St11char_traitsIS2_ESaIS2_EEESC__24)
+                (>= (+ start_s60_33 (* (- 1.0) end_s_19)) 0.0)
+                (<= llvm.fabs.f64_34 0.0)
+                (not (= color_35 3))
+                (<= GetADCStopDeceleration_37 max_stop_deceleration_38))))
+  (or (and (not (<= end_s_21 start_s_20))
+           (not _ZSteqIcEN9__gnu_cxx11__enable_ifIXsr9__is_charIT_EE7__valueEbE6__typeERKNSt7__cxx1112basic_stringIS2_St11char_traitsIS2_ESaIS2_EEESC__24)
+           a!1
+           (not (= color_35 3))
+           (<= GetADCStopDeceleration_37 max_stop_deceleration_38))
+      a!2))

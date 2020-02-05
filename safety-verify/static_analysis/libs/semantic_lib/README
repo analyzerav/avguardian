@@ -1,0 +1,11 @@
+To run the pass: ./run.sh $bitcode_file_with_debug_option
+
+The pass reads an input file func_bb.meta, in which you can define the target basic block in which you want to dump the source code info in this format per line
+'BB id'-'function name (in LLVM mangled form)'
+
+The output would include the extracted source-level variables of a target function (one that contains a target BB) and the dump info of each target BB including
+
+BB ID:
+       src_file: source code file and line number of an LLVM instruction
+       Operand: tainted dataflow chain (with op type and operand index) for each variable used in the condition instruction (with comparison op type) for branching, e.g., %this.addr -> %call28
+       Operand: %this.addr->load,%this1->bitcast,%11->field:1,%config_->apollo::planning::TrafficRuleConfig::crosswalk() const-0,%call26->apollo::planning::CrosswalkConfig::min_pass_s_distance() const-0,%call28->fcmp-ogt(1),%cmp->br(0),

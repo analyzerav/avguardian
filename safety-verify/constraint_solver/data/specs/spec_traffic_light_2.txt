@@ -1,0 +1,23 @@
+and(
+    <(
+        vehicle_ego.end_s,
+        intersection.start_s
+    ),
+    is_color(
+        traffic_light_self,
+        yellow
+    ),
+    <=(
+        vehicle_ego.velocity,
+        *(
+            max_stop_deceleration,
+            *(
+                -(
+                    intersection.start_s,
+                    vehicle_ego.end_s
+                ),
+                2
+            )
+        )
+    )
+)
