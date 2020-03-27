@@ -10,8 +10,6 @@ The first one is a publish-subscribe message overprivilege detection tool in `ov
 
 The second one is a safety driving rule compliance verification framework in `safety-verify`
 
-More detailed tool documentation is in README of each folder
-
 
 ## Download Apollo source code and docker container
 
@@ -121,3 +119,4 @@ More detailed tool documentation is in README of each folder
     sudo mv /usr/include/gtest /usr/include/gtest_bak
     ```
 
+More detailed tool documentation and setup is in README of each folder.
