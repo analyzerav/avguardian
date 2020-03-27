@@ -10,7 +10,7 @@ The first one is a publish-subscribe message overprivilege detection tool in `ov
 
 The second one is a safety driving rule compliance verification framework in `safety-verify`
 
-The instructions of tool setup are detailed in README of each folder
+More detailed tool documentation is in README of each folder
 
 
 ## Download Apollo source code and docker container
