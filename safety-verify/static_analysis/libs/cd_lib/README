@@ -1,5 +1,0 @@
-To run the pass 
-$ opt -load ./cd.so -cd $1 -o /dev/null &> cd.out
-
-To extract the boolean expression
-$ ./postprocess.sh cd.out cd.expr

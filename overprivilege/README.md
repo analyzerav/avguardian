@@ -1,57 +1,91 @@
-# Overprivilege detection tool
+Apollo+LLVM Notes
+===
 
-This tool consists of several LLVM passes defined as follows. It also consists of some preprocessing step
+## Download Apollo source code and docker container
 
-## Instructions
+1. Download Apollo 3.0 source code
 
-Generating LLVM's bitcode files of Apollo
+    ```bash
+    wget https://github.com/ApolloAuto/apollo/archive/v3.0.0.tar.gz
+    tar xf https://github.com/ApolloAuto/apollo/archive/v3.0.0.tar.gz
+    ```
 
-1. Start Apollo container and build Apollo code base following the instructions in https://github.com/ApolloAuto/apollo
+2. Download and start Apollo docker container
 
-2. Once build succeeds, run preprocess/gen_*.sh (inside Apollo container) to generate bitcode files for Apollo and third-party libraries
+    ```bash
+    cd apollo-3.0.0/
+    bash docker/scripts/dev_start.sh
+    bash docker/scripts/dev_into.sh
+    ```
 
-3. Run specific llvm passes using run_pass.sh
+3. Enter the docker container to compile Apollo
+    ```bash
+    bash docker/scripts/dev_into.sh
+    ```
 
-## Directory layout of LLVM passes
 
-1. llvm-pass-funcdef/
+## Compile Apollo using LLVM
 
-FuncDef: LLVM pass to identify bitcode file location for each function definition, output funcdef.meta
+(All following commands are assumed to be executed in Apollo dev docker)
 
-2. llvm-pass-funccall/
+1. Install LLVM
 
-FuncCall:: LLVM pass to identify caller-callee relationship, output funccall.meta
+    **LLVM 8 (Recommended)**
 
-3. llvm-pass-funcprof/
+    ```bash
+    # LLVM 8
+    sudo apt install llvm-8 llvm-8-dev clang-8 libclang-8-dev
 
-LLVM passes for identifying target message variables in Baidu Apollo
+    # Create soft links
+    sudo ln -sf /usr/bin/llvm-config-8 /usr/bin/llvm-config
+    sudo ln -sf /usr/bin/llvm-link-8 /usr/bin/llvm-link
+    ```
 
-FuncProf: extract target message related variables to construct tainted variable set for each function, target message is defined in the input config file msg.meta
+2. Install `whole-program-llvm`  
 
-FuncRef: check ret_var of callees as tainted variable or not, update caller's tainted variable set, do this recursively until the tainted variable set is complete
+    ```bash
+    sudo pip install wllvm
+    ```
 
-FuncCount: get all defined func name in a bitcode file
+3. Copy `wllvm` directory to `/apollo/tools`
 
-FuncComb: reoslve external func def and extract target message related variables from them
+    ```bash
+    cp -r wllvm /apollo/tools
+    ```
 
-CallOrder.cpp: generate the topological order and identify entry points of inter-procedural dataflow analysis, output funcorder.meta
+4. Compile Apollo
 
-FuncTaint: update taint source of return vars from call instructions
+    ```bash
+    cd /apollo
+    mkdir wllvm_bc  # This directory will contain all seperate bitcode files
+    bash apollo.sh build --copt=-mavx2 --cxxopt=-mavx2 --copt=-mno-sse3 --crosstool_top=tools/wllvm:toolchain
+    ```
 
-4. llvm-pass-reaching/
+    Those `copt` and `cxxopt` can be removed, if your machine supports the corresponding instruction sets.
 
-LLVM pass for generating function data-flow profile summary from reaching definition analysis
+5. Or compile single module (e.g., `localization` module)
 
-ReachingDefinitions: read funcorder.meta and each *.prof to perform reaching definition analysis of tainted vars, output per-function profile as *.df
+    ```bash
+    ## Apollo 3.0
+    bazel build --define ARCH=x86_64 --define CAN_CARD=fake_can --cxxopt=-DUSE_ESD_CAN=false --copt=-mavx2 --copt=-mno-sse3 --cxxopt=-DCPU_ONLY --crosstool_top=tools/wllvm:toolchain //modules/localization:localization --compilation_mode=opt
+    ```
 
-5. llvm-pass-copy/
+6. Extract bitcode file (e.g., `localization` module)
 
-LLVM pass for extracting copy-from relationship among message fields to detect publisher-side overprivilege 
+    ```bash
+    cd /apollo/bazel-bin/modules/localization
+    extract-bc localization
 
-FieldAlias: read each *.df to generate copy-from publish-overprivileged fields
+    # Check output
+    file localization.bc
+    llvm-dis localization.bc
+    ```
 
-6. llvm-pass-defuse/
 
-LLVM pass for generating function data-flow profile summary form define-use analysis to detect subscriber-side overprivilege
+## Tips
 
-UseDef: read funcorder.meta and each *.prof to generate used fields, output per-function profile as *.uf
+- May need to delete inconsistent `gtest` header file
+    ```bash
+    sudo mv /usr/include/gtest /usr/include/gtest_bak
+    ```
+

@@ -1,1 +1,0 @@
-opt -load ./FunctionInfo.so -function-info $1 -o /dev/null

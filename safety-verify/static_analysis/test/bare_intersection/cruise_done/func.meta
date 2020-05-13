@@ -1,2 +1,0 @@
-apollo::planning::scenario::bare_intersection::BareIntersectionUnprotectedStageIntersectionCruise::Process(apollo::common::TrajectoryPoint const&, apollo::planning::Frame*)
-apollo::planning::scenario::StageIntersectionCruiseImpl::CheckDone(apollo::planning::Frame const&, apollo::planning::scenario::ScenarioConfig::ScenarioType const&, apollo::planning::scenario::ScenarioConfig::StageConfig const&, bool)
