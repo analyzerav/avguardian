@@ -1,8 +1,8 @@
 # AVGuardian 
 
-AVGuaridan is a static anlaysis and runtime mitiation system to perform security vulnerability analysis for AV software systems. 
+AVGuardian is a static anlaysis and runtime mitiation system to perform security vulnerability analysis for AV software systems. 
 
-Currently it is prootyped on top of a popular open-source AV software code base [Baidu Apollo](https://github.com/ApolloAuto/apollo/). 
+Currently it is prototyped on top of a popular open-source AV software code base [Baidu Apollo](https://github.com/ApolloAuto/apollo/). 
 
 There are two major parts in the current code base. 
 
