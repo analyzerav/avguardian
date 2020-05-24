@@ -3,6 +3,6 @@
 PATH=/usr/local/cuda-8.0/bin:/apollo/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin: \
 LLVM_COMPILER=clang \
 WLLVM_BC_STORE=/apollo/wllvm_bc \
-LLVM_BITCODE_GENERATION_FLAGS="-flto -fwhole-program-vtables" \
+LLVM_BITCODE_GENERATION_FLAGS="-fvisibility=hidden -flto -fwhole-program-vtables" \
 exec wllvm++ "$@"
 
